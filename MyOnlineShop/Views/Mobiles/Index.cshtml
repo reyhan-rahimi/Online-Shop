@@ -1,0 +1,281 @@
+﻿@model IEnumerable<MyOnlineShop.Models.Mobile>
+
+@{
+    ViewData["Title"] = "Index";
+}
+
+<h1>Index</h1>
+
+<p>
+    <a asp-action="Create">Create New</a>
+</p>
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.Brand)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Garanty)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Discribtor)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Sale)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Price)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Picture)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Colors)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Dimensions)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.DateCreate)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Weight)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.SIMcardsDescription)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.SpecialFeatures)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.NumberOfSimCards)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Model)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Chip)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.CPU)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.ProcessorType)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.CPUFrequency)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.GraphiteProcessore)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.InternalMemory)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Ramsize)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.MemoryCardSupport)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.ScreenTechnology)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.size)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Resulotion)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.PixelDensity)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.ScreenToBodyRatio)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.CommunicationNetworks)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.TwoG)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.ThreeG)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.FourG)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.CommunicationTechnology)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.CommunicationPortals)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.BluetoothVersion)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.BackCamera)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.PictureResolution)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.CameraAbility)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Film)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.SelfiCamera)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.OperatingSystem)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Sensor)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.BattreySpecifications)
+            </th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+@foreach (var item in Model) {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.Brand)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Garanty)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Discribtor)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Sale)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Price)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Picture)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Colors)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Dimensions)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.DateCreate)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Weight)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.SIMcardsDescription)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.SpecialFeatures)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.NumberOfSimCards)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Model)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Chip)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.CPU)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.ProcessorType)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.CPUFrequency)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.GraphiteProcessore)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.InternalMemory)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Ramsize)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.MemoryCardSupport)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.ScreenTechnology)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.size)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Resulotion)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.PixelDensity)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.ScreenToBodyRatio)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.CommunicationNetworks)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.TwoG)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.ThreeG)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.FourG)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.CommunicationTechnology)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.CommunicationPortals)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.BluetoothVersion)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.BackCamera)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.PictureResolution)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.CameraAbility)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Film)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.SelfiCamera)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.OperatingSystem)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Sensor)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.BattreySpecifications)
+            </td>
+            <td>
+                <a asp-action="Edit" asp-route-id="@item.Id">Edit</a> |
+                <a asp-action="Details" asp-route-id="@item.Id">Details</a> |
+                <a asp-action="Delete" asp-route-id="@item.Id">Delete</a>
+            </td>
+        </tr>
+}
+    </tbody>
+</table>
